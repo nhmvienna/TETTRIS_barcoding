@@ -17,7 +17,7 @@ Here, I used Luise's multifasta dataset and split it by Gene names in multiple f
 
 awk '/^>/ {split($0,a,"|"); gsub("\r", "", a[3]); file=a[3]".fasta"} { print > file }' /media/inter/mkapun/projects/TETTRIS_barcoding/data/BOLD_TestRun/bold_fasta.fas
 ```
-For each of these multifasta datasets, I then performed multiple alignment in _R_ using the _DECIPHER_ package and calculated _Nucleotide Diversity_ and _Theta S_ (Segregating Sites) using the _APE_ package. The corresponding script can be found [here](main.sh)
+For each of these multifasta datasets, I then performed multiple alignment in _R_ using the _DECIPHER_ package and calculated _Nucleotide Diversity_ and _Theta S_ (Segregating Sites) using the _APE_ package. The corresponding script can be found [here](/main.sh)
 
 See the results below:
 
