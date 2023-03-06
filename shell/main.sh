@@ -7,7 +7,6 @@ mkdir Genes && cd Genes
 ## split genes in separate files
 awk '/^>/ {split($0,a,"|"); gsub("\r", "", a[3]); file=a[3]".fasta"} { print > file }' /media/inter/mkapun/projects/TETTRIS_barcoding/data/BOLD_TestRun/bold_fasta.fas
 
-
 echo '''
 
 library(DECIPHER)
