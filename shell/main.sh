@@ -65,4 +65,6 @@ for (i in ID){
 sink("/media/inter/mkapun/projects/TETTRIS_barcoding/data/BOLD_TestRun/Genes.stats")
 print(kable(as.data.frame(OUT)))
 sink()
-''' > 
+''' >/media/inter/mkapun/projects/TETTRIS_barcoding/data/BOLD_TestRun/Genes.r
+
+Rscript /media/inter/mkapun/projects/TETTRIS_barcoding/data/BOLD_TestRun/Genes.r
