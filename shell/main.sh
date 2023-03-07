@@ -50,13 +50,13 @@ for (i in ID){
     seg.sites(myalign)
 
     ## Nucleotide Diversity
-    N<-nuc.div(myalign)
+    N<-round(nuc.div(myalign),3)
     OUT[["NucDiv"]]<-c(OUT[["NucDiv"]],N)
 
     ## Segregating Sites (Theta)
     s <- length(seg.sites(myalign))
     n <- length(myalign)
-    T<-theta.s(s,n)/Length
+    T<-round(theta.s(s,n)/Length,3)
     OUT[["Theta"]]<-c(OUT[["Theta"]],T)
     OUT[["N"]]<-c(OUT[["N"]],n)
 }
