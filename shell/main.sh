@@ -56,7 +56,7 @@ for (i in ID){
     ## Segregating Sites (Theta)
     s <- length(seg.sites(myalign))
     n <- length(myalign)
-    T<-theta.s(s,n)
+    T<-theta.s(s,n)/Length
     OUT[["Theta"]]<-c(OUT[["Theta"]],T)
     OUT[["N"]]<-c(OUT[["N"]],n)
 }
